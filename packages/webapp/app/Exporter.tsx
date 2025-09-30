@@ -13,6 +13,8 @@ export const Exporter = () => {
   const [error, setError] = useState<string | undefined>();
 
   const handleExport = useCallback(() => {
+    if (exporting) return;
+
     setExporting(true);
     setError(undefined);
 
