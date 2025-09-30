@@ -9,4 +9,4 @@ COPY package.json /exporter
 COPY tsconfig.json /exporter
 WORKDIR /exporter
 RUN npm install && npm run build
-CMD npm run start
+CMD ["npm", "run", "start"]
