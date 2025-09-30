@@ -28,7 +28,7 @@ export default function Home() {
             <Image src={accountSettings} alt="Opening account settings" />
           </li>
           <li>
-            2. Enable "Dev mode"
+            2. Enable &quot;Dev mode&quot;
             <Image src={devMode} alt="Enabling Dev mode" />
           </li>
           <li>
@@ -36,9 +36,9 @@ export default function Home() {
             <Image src={apiUrl} alt="Copying api Url" />
           </li>
           <li>
-            4. Paste your Api Url above and click "Export". Don't worry, this is
-            a read-only api used to fetch your page's content and we don't store
-            it anywhere.
+            4. Paste your Api Url above and click &quot;Export&quot;. Don&apos;t
+            worry, this is a read-only api used to fetch your page&apos;s
+            content and we don&apos;t store it anywhere.
           </li>
           <li>5. Wait for the export, download and extract the zip file.</li>
           <li>
@@ -52,8 +52,9 @@ export default function Home() {
                 https://pinit.eth.limo
               </a>
             </Button>
-            , select "Folder" on "Deploy from Browser" and provide the{" "}
-            <strong>_static</strong> folder extracted in the previous step.
+            , select &quot;Folder&quot; on &quot;Deploy from Browser&quot; and
+            provide the <strong>_static</strong> folder extracted in the
+            previous step.
           </li>
           <li>
             7. Wait for the upload. You should get a .eth.limo link for your
@@ -61,8 +62,8 @@ export default function Home() {
           </li>
           <li>
             8. If you wish to set up the IPFS deployment with an ENS domain you
-            own, connect your wallet, then click on "Bind an Ethereum Domain"
-            and follow the instructions
+            own, connect your wallet, then click on &quot;Bind an Ethereum
+            Domain&quot; and follow the instructions
           </li>
         </ol>
       </main>
