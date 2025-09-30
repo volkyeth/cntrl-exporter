@@ -31,7 +31,7 @@ app.post('/build', async (c) => {
 
     try {
         console.log('Starting build...');
-        execSync(`CNTRL_API_URL=${apiKey} npm run build --no-lint --turbopack`, { stdio: 'inherit', cwd: buildDir });
+        execSync(`CNTRL_API_URL=${apiKey} npm run build -- --no-lint`, { stdio: 'inherit', cwd: buildDir });
 
         const outputDir = '_static';
         const zipName = `build-${Date.now()}.zip`;
