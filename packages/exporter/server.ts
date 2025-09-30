@@ -30,7 +30,7 @@ const storage = new Storage();
 app.post('/build', async (c) => {
     const { apiKey } = await c.req.json<{ apiKey: string }>();
     if (!apiKey) {
-        return c.text('API Key is required.', 400);
+        return c.text('Api url is required.', 400);
     }
 
     const buildDir = '/cntrl-template'
@@ -57,7 +57,7 @@ app.post('/build', async (c) => {
         return c.json({ downloadUrl: url });
     } catch (error) {
         console.error('Build failed:', error);
-        return c.text('Build failed.', 500);
+        return c.text('Build failed. Check your Api url and try again.', 500);
     }
 });
 
