@@ -1,0 +1,19 @@
+{
+  "name": "exporter-service",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "@google-cloud/storage": "^7.12.0",
+    "hono": "^4.9.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
