@@ -13,9 +13,9 @@ export default function Home() {
         <Exporter />
         <h2 className="font-bold text-2xl">Instructions</h2>
 
-        <ol>
+        <ol className="flex flex-col gap-6 list-decimal">
           <li>
-            1. Go to account settings on your{" "}
+            Go to account settings on your{" "}
             <Button variant={"link"} className="inline text-base p-0" asChild>
               <a
                 href="https://app.cntrl.site/"
@@ -25,24 +25,28 @@ export default function Home() {
                 cntrl.site project
               </a>
             </Button>
-            <Image src={accountSettings} alt="Opening account settings" />
+            <Image
+              src={accountSettings}
+              className="mt-2"
+              alt="Opening account settings"
+            />
           </li>
           <li>
-            2. Enable &quot;Dev mode&quot;
-            <Image src={devMode} alt="Enabling Dev mode" />
+            Enable &quot;Dev mode&quot;
+            <Image src={devMode} className="mt-2" alt="Enabling Dev mode" />
           </li>
           <li>
-            3. Go to the Dev tab and copy your Api Url
-            <Image src={apiUrl} alt="Copying api Url" />
+            Go to the Dev tab and copy your Api Url
+            <Image src={apiUrl} className="mt-2" alt="Copying api Url" />
           </li>
           <li>
-            4. Paste your Api Url above and click &quot;Export&quot;. Don&apos;t
+            Paste your Api Url above and click &quot;Export&quot;. Don&apos;t
             worry, this is a read-only api used to fetch your page&apos;s
             content and we don&apos;t store it anywhere.
           </li>
-          <li>5. Wait for the export, download and extract the zip file.</li>
+          <li>Wait for the export, download and extract the zip file.</li>
           <li>
-            6. Go to{" "}
+            Go to{" "}
             <Button variant={"link"} className="inline text-base p-0" asChild>
               <a
                 href="https://pinit.eth.limo"
@@ -57,11 +61,11 @@ export default function Home() {
             previous step.
           </li>
           <li>
-            7. Wait for the upload. You should get a .eth.limo link for your
+            Wait for the upload. You should get a .eth.limo link for your
             website
           </li>
           <li>
-            8. If you wish to set up the IPFS deployment with an ENS domain you
+            If you wish to set up the IPFS deployment with an ENS domain you
             own, connect your wallet, then click on &quot;Bind an Ethereum
             Domain&quot; and follow the instructions
           </li>
