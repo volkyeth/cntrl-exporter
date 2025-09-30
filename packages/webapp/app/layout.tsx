@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cntrl exporter",
+  title: "Cntrl.zip",
   description: "Export your cntrl.site",
 };
 
