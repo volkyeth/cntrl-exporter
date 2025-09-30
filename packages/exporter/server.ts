@@ -48,10 +48,12 @@ app.post('/build', async (c) => {
         console.log(`${zipName} uploaded to ${bucketName}.`);
         rmSync(zipPath, { force: true }); // Clean up the local zip file
 
+        const downloadFilename = 'cntrl-site-export.zip';
         const [url] = await storage.bucket(bucketName).file(zipName).getSignedUrl({
             version: 'v4' as const,
             action: 'read' as const,
             expires: Date.now() + 24 * 60 * 60 * 1000, // 1 day
+            responseDisposition: `attachment; filename="${downloadFilename}"`,
         });
 
         return c.json({ downloadUrl: url });
