@@ -156,7 +156,7 @@ export default function Home() {
           <Image
             src={volkyPfp}
             width={32}
-            className="animate-bounce"
+            className="animate-squish origin-bottom"
             alt="Volky profile"
           />
         </a>

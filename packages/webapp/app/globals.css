@@ -43,6 +43,24 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@theme {
+  --animate-squish: squish 0.5s ease-in infinite alternate;
+
+  @keyframes squish {
+    0% {
+      transform: translateY(-10px) scaleY(1);
+    }
+
+    80% {
+      transform: translateY(0px) scaleY(1);
+    }
+
+    100% {
+      transform: translateY(0px) scaleY(0.8);
+    }
+  }
+}
+
 :root {
   --radius: 0.65rem;
   --background: oklch(1 0 0);
