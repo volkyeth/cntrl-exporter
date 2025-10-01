@@ -59,7 +59,8 @@ export const Exporter = () => {
         <Label>Api url</Label>
         <Textarea
           value={apiUrl}
-          className="w-full"
+          placeholder="https://<username>:<password>@api.cntrl.site"
+          className="w-full placeholder:text-muted-foreground/50"
           onChange={(e) => setApiUrl(e.target.value)}
         />
       </div>
