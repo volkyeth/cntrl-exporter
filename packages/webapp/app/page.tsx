@@ -151,11 +151,18 @@ export default function Home() {
       </section>
 
       <footer className="mt-20 flex flex-col gap-4 justify-center w-full items-center">
-        <p>{2025} · made by volky</p>
+        <p>
+          {2025} · made by{" "}
+          <Button variant={"link"} className="inline text-base p-0" asChild>
+            <a href="https://x.com/volkyeth" target="_blank">
+              volky
+            </a>
+          </Button>
+        </p>
         <a href="https://x.com/volkyeth" target="_blank">
           <Image
             src={volkyPfp}
-            width={32}
+            width={38}
             className="animate-squish origin-bottom"
             alt="Volky profile"
           />
