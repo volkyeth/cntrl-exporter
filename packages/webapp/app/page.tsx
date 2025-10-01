@@ -6,12 +6,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import githubIcon from "./github.svg";
 import volkyPfp from "./volky.svg";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
