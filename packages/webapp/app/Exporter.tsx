@@ -54,10 +54,14 @@ export const Exporter = () => {
   }, [exporting, apiUrl]);
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="grid w-full w-md items-center gap-2">
+    <div className="flex flex-col gap-2 w-full">
+      <div className="grid w-full items-center gap-2">
         <Label>Api url</Label>
-        <Textarea value={apiUrl} onChange={(e) => setApiUrl(e.target.value)} />
+        <Textarea
+          value={apiUrl}
+          className="w-full"
+          onChange={(e) => setApiUrl(e.target.value)}
+        />
       </div>
       {!downloadUrl && (
         <>
